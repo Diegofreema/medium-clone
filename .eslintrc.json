@@ -1,3 +1,9 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import"
+  ]
 }
