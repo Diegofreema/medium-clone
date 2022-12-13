@@ -10,7 +10,7 @@ const Header = () => {
     <div>
     <Link href='/'>
     <img
-    src='/mediumLogo.png'
+    src='/m.webp'
   
     alt='logo'
     className='w-[50px] h-[40px]'

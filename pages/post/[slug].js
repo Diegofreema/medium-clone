@@ -20,6 +20,9 @@ const Post = ({post, morePost}) => {
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
   const [submitted, setSubmitted] = useState(false)
   console.log(post.comments);
+  const Comments = () => (
+   post.comments.map((comment) => comment.comment.length)
+  )
   const onSubmit = async(data) => {
    
     await fetch('/api/createComment', {
@@ -202,7 +205,7 @@ const Post = ({post, morePost}) => {
       className='absolute right-0 bottom-0 top-0 w-full md:w-[400px]  min-h-screen bg-white shadow-2xl py-10 pb-2 flex-1 px-5 overflow-y-scroll scrollbar-none'>
       
       <div className='flex justify-between items-center mt-16 md:mt-2'>
-      <p className='font-bold text-2xl'>RESPONSES (14)</p>
+      <p className='font-bold text-2xl'>REPLIES</p>
       <XMarkIcon className='font-thin cursor-pointer w-6 h-6 text-black/50' onClick={hideNav}/>
       </div>
       <div className='flex-1'>
@@ -310,6 +313,7 @@ const Post = ({post, morePost}) => {
 
    {post.comments.map((comment) => (
     <div className='px-4 pb-5 mb-6 border-b border-black/20'>
+    
     <div className='space-y-2'>
     <p className='font-semibold text-lg'>{comment.name}</p>
     <p className='text-sm text-black/50'>{moment(comment._createdAt).format('MMM DD, YYYY')}</p>

@@ -12,7 +12,7 @@ const ReaderNav = () => {
     <div className="logocon">
     <Link href='/'>
     <img
-    src='/SmallLogo.png'
+    src='/m.webp'
   
     alt='logo'
     className='rounded-full object-cover w-[200px] h-[40px]'

@@ -12,7 +12,7 @@ const Reader = () => {
     <div className="logocon">
   
     <img
-    src='/SmallLogo.png'
+    src='/m.webp'
    
     alt='logo'
     className='rounded-full w-[200px] h-[40px] object-cover'
