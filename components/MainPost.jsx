@@ -32,18 +32,18 @@ const MainPost = ({post}) => {
     month: 'short'
    }) }</p>
    </div>
-   <div className='post-detail flex items-center space-x-4 sm:space-x-16'>
-  <div className="left">
-  <p className='font-bold -mt-12 sm:mt-0 md:font-bold text-sm md:text-2xl'>{post.title.slice(0, 30)}...</p>
-  <p className='mt-4 text-sm hidden sm:flex'>{post.description}...</p>
+   <div className='post-detail flex items-center justify-between space-x-4 sm:space-x-16'>
+  <div className="left flex-1">
+  <p className='font-bold  sm:mt-0 md:font-bold text-sm md:text-2xl'>{post.title.slice(0, 30)}...</p>
+  <p className=' text-sm hidden sm:flex'>{post.description}...</p>
   </div>
-  <div className="right flex-shrink-0 w-[100px] h-[100px] relative">
+  <div className=" flex-shrink-0 w-[100px] h-[100px] relative">
   <img
   src={urlFor(post.mainImage).url()}
 
  priority
   
-  className='flex-1 w-full flex-shrink-0 object-cover'
+  className='flex-1 w-full h-full flex-shrink-0 object-cover'
   alt='mainImage'
   />
   </div>
