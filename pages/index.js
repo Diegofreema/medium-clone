@@ -48,7 +48,7 @@ export default function Home({posts}) {
     </span>
     </div>
     <footer className='text-center '>
-    <p className='font-semibold text-xs pb-4'>All Rights reserved © Legacy LTD {new Date().getFullYear()}</p>
+    <p className='font-semibold text-xs pb-4'>Copyright © {new Date().getFullYear()} Legacy Inc All Rights reserved</p>
     </footer>
     </div>
    
