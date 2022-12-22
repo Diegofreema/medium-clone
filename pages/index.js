@@ -39,7 +39,7 @@ export default function Home({posts}) {
     <BsBookmarks className='w-5 h-5 text-black/50'/>
     <span className='rounded-full w-10 h-10 flex items-center justify-center overflow-hidden'>
     <Image
-    src='/diego.jpg'
+    src='/nw.jpg'
     width={50}
     height={50}
     className='rounded-full'
@@ -47,6 +47,9 @@ export default function Home({posts}) {
     />
     </span>
     </div>
+    <footer className='text-center '>
+    <p className='font-semibold text-xs pb-4'>All Rights reserved © Legacy LTD {new Date().getFullYear()}</p>
+    </footer>
     </div>
    
     

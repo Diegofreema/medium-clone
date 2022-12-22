@@ -34,7 +34,7 @@ const ReaderNav = () => {
     </div>
     <div className="imageContainer w-[40px] h-[40px] rounded-full overflow-hidden place-items-center ">
     <img
-    src='/diego.jpg'
+    src='/nw.jpg'
   
     alt='diego'
     
